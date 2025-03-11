@@ -31,8 +31,8 @@ This pipeline automates the entire 16S rRNA analysis workflow, using QIIME2 and 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/username/16s-rRNA-pipeline.git
-cd 16s-rRNA-pipeline
+git clone https://github.com/MasterSwordf1sh/Nextflow-16s-rRNA-analysis
+cd Nextflow-16s-rRNA-analysis
 ```
 
 2. Prepare your input data:
