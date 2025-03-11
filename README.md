@@ -2,7 +2,7 @@
 
 A complete Nextflow workflow for processing and analyzing 16S rRNA amplicon sequencing data from raw reads to statistical analysis.
 
-![Pipeline Overview](images/pipeline_overview.png)
+![Pipeline Overview](https://github.com/MasterSwordf1sh/Nextflow-16S-rRNA-analysis/blob/main/pipeline-overview-diagram.svg)
 
 ## Overview
 
