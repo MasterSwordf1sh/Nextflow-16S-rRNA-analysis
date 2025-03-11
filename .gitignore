@@ -1,0 +1,66 @@
+# Nextflow specific
+.nextflow/
+.nextflow.log*
+work/
+.DS_Store
+*.swp
+*.swo
+
+# Results directory
+results/
+output/
+
+# Databases (usually large)
+databases/
+
+# Raw data
+data/raw/
+
+# Temporary files
+tmp/
+temp/
+.temp*
+
+# Singularity/Docker images
+*.sif
+*.img
+*.simg
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# Log files
+*.log
+log/
+logs/
+
+# System files
+.DS_Store
+Thumbs.db
+.directory

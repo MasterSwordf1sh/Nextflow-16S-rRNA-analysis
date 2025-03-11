@@ -1,0 +1,62 @@
+flowchart TD
+    A[Raw FASTQ Files] --> B[1. FastQC]
+    A --> C[2. Trimmomatic]
+    C --> D[3. QIIME2 Import]
+    D --> E[4. DADA2 Denoising]
+    
+    E --> F[5. Feature Table Summary]
+    E --> G[6. Phylogenetic Tree]
+    E --> H[7. Taxonomic Classification]
+    E --> I[8. Taxonomic Barplots]
+    
+    G --> J[9. Alpha Rarefaction]
+    G --> K[10. Core Diversity Metrics]
+    K --> L[11. Alpha Diversity Stats]
+    K --> M[12. Beta Diversity Stats]
+    
+    H --> N[13. ANCOM Differential Abundance]
+    
+    B --> O[14. MultiQC Report]
+    E --> O
+    
+    subgraph "Quality Control & Preprocessing"
+        B
+        C
+        D
+        E
+    end
+    
+    subgraph "Feature Processing & Taxonomy"
+        F
+        G
+        H
+        I
+    end
+    
+    subgraph "Diversity Analysis"
+        J
+        K
+        L
+        M
+    end
+    
+    subgraph "Statistical Analysis & Reports"
+        N
+        O
+    end
+    
+    style A fill:#e1f5fe,stroke:#01579b
+    style B fill:#fff9c4,stroke:#f57f17
+    style C fill:#fff9c4,stroke:#f57f17
+    style D fill:#fff9c4,stroke:#f57f17
+    style E fill:#fff9c4,stroke:#f57f17
+    style F fill:#dcedc8,stroke:#33691e
+    style G fill:#dcedc8,stroke:#33691e
+    style H fill:#dcedc8,stroke:#33691e
+    style I fill:#dcedc8,stroke:#33691e
+    style J fill:#e0f7fa,stroke:#006064
+    style K fill:#e0f7fa,stroke:#006064
+    style L fill:#e0f7fa,stroke:#006064
+    style M fill:#e0f7fa,stroke:#006064
+    style N fill:#f3e5f5,stroke:#4a148c
+    style O fill:#f3e5f5,stroke:#4a148c
